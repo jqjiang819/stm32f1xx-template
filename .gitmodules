@@ -1,0 +1,9 @@
+[submodule "thirdparty/drivers/stm32f1xx_hal"]
+	path = thirdparty/drivers/stm32f1xx_hal
+	url = https://github.com/STMicroelectronics/stm32f1xx_hal_driver.git
+[submodule "thirdparty/drivers/cmsis_device"]
+	path = thirdparty/drivers/cmsis_device
+	url = https://github.com/STMicroelectronics/cmsis_device_f1.git
+[submodule "thirdparty/drivers/cmsis_core"]
+	path = thirdparty/drivers/cmsis_core
+	url = https://github.com/STMicroelectronics/cmsis_core.git
