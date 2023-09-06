@@ -62,6 +62,16 @@ void SysTick_Handler();
 /* please refer to the startup file (startup_stm32f1xx.s).                    */
 /******************************************************************************/
 
+/**
+ * @brief This function handles USB low priority or CAN RX0 interrupts.
+ */
+void USB_LP_CAN1_RX0_IRQHandler();
+
+/**
+ * @brief This function handles USB wake up interrupts.
+ */
+void USBWakeUp_IRQHandler();
+
 #ifdef __cplusplus
 }
 #endif

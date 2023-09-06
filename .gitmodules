@@ -7,3 +7,6 @@
 [submodule "thirdparty/core/stm32f1xx_hal_driver"]
 	path = thirdparty/core/stm32f1xx_hal_driver
 	url = https://github.com/STMicroelectronics/stm32f1xx_hal_driver.git
+[submodule "thirdparty/middleware/libusb_stm32"]
+	path = thirdparty/middleware/libusb_stm32
+	url = https://github.com/dmitrystu/libusb_stm32.git

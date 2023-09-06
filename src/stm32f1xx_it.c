@@ -1,4 +1,7 @@
 #include "stm32f1xx_it.h"
+#include "usbd_core.h"
+
+extern usbd_device usbd;
 
 void NMI_Handler() {
     while (1) {}
@@ -31,4 +34,12 @@ void PendSV_Handler() {
 
 void SysTick_Handler() {
     HAL_IncTick();
+}
+
+void USB_LP_CAN1_RX0_IRQHandler() {
+    usbd_poll(&usbd);
+}
+
+void USBWakeUp_IRQHandler() {
+    usbd_poll(&usbd);
 }

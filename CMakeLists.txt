@@ -28,7 +28,7 @@ file(GLOB_RECURSE PROJECT_SOURCES CONFIGURE_DEPENDS
   ${CMAKE_CURRENT_SOURCE_DIR}/src/*.s)
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
-target_link_libraries(${PROJECT_NAME} PUBLIC stm32core)
+target_link_libraries(${PROJECT_NAME} PUBLIC stm32core libusb_stm32)
 target_link_libraries(${PROJECT_NAME} PRIVATE "-Wl,--print-memory-usage,-Map=${PROJECT_NAME}.map,--cref")
 target_include_directories(${PROJECT_NAME} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>)
